@@ -1,10 +1,13 @@
 body {
-  margin: 0;
+  margin: 0 auto;
+  background-color: rgb(225, 225, 225);
   padding: 0;
-  font-family: sans-serif;
+  min-height: 100vh;
+  font-size: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Metrophobic", sans-serif;
 }
 
 ul {
@@ -22,5 +25,57 @@ a {
 }
 
 button {
+  background-color: inherit;
+  border: none;
   cursor: pointer;
+}
+header {
+  position: static;
+  padding: 20px;
+  top: auto;
+  width: 40%;
+  top: 50%;
+  text-align: center;
+  transition: all 0.5s linear;
+}
+.header-animation {
+  width: 90%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-family: "Valorant", sans-serif;
+  font-size: 400%;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  animation: transitions 2s;
+}
+
+@keyframes transitions {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 40px;
+  background-color: rgb(225, 225, 225);
+}
+
+.nav-btn {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  font-weight: bolder;
+  border-radius: 55px;
 }
